@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Html-css tasks\styles.css">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Navigation Website</title>
+    <link rel="stylesheet" href="Colrs.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#form-section">Form</a></li>
+                <li><a href="#table-section">Table</a></li>
+                <li><a href="#list-section">List</a></li>
+                <li><a href="#media-section">Media</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="semanticwebsite.html">Home</a>
-        <a href="forms.html">Form</a>
-        <a href="Table.html">Table</a>
-        <a href="List.html">List</a>
-        <a href="Media.html">Media</a>
-    </nav>
-    <h1>WEBSITE</h1>
-    <p>In this website, I created a semantic webpage with forms, tables,lists and media.</p>
+    <main>
+        <section id="form-section">
+            <h2>Form with Input Types</h2>
+                <form id="input-types-form">
+                    <div class="form-group">
+                        <label for="text">Name:</label>
+                        <input type="text" id="text" name="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+            </form>
+        </section>
 
+        <section id="table-section">
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rambabu</td>
+                        <td>ECE</td>
+                        <td>Guntur</td>
+                    </tr>
+                    <tr>
+                        <td>Sowmya</td>
+                        <td>EEE</td>
+                        <td>Guntur</td>
+                    </tr>
+                    <tr>
+                        <td>Kusuma</td>
+                        <td>EEE</td>
+                        <td>Mangalagiri</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="list-section">
+            <h2>Projects List</h2>
+            <ul>
+                <li>Portfolio</li>
+                <li>Landing Page</li>
+                <li>Image Gallery</li>
+            </ul>
+        </section>
+
+        <section id="media-section">
+            <h2>Media Example</h2>
+            <img src="Html-css-js-tasks\Html-css tasks\kusuma_pic.jpg" alt="Sample Image" width="300">
+            <video width="300" controls>
+                <source src="C:\Users\studi\Desktop\Ssit-2\Html-css tasks" type="video/mp4">
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Kusuma Siramdasu</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

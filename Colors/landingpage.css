@@ -5,19 +5,28 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(235, 22, 22);
     color: black;
     font-family: "Fira Sans", sans-serif;
-    background-color: white;
+    background-color: rgb(245, 188, 221);
+}
+.box{
+    
+    background-color: aqua;
 }
 
 nav {
     width: 100%;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     padding: 20px 5%;
-    background-color: #8cc099;
+    background-color: #c08cb3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 nav .heading {
@@ -46,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: green;
+    background-color: aqua;
 }
 
 nav ul li a:hover {
@@ -59,8 +68,6 @@ nav .sideMenuButton {
     cursor: pointer;
     display: none;
 }
-
-/* responsive navbar css */
 @media screen and (max-width: 600px) {
     nav .sideMenuButton {
         display: flex;
@@ -80,7 +87,7 @@ nav .sideMenuButton {
     position: fixed;
     top: 0;
     right: 0%;
-    background-color: green;
+    background-color: aqua;
     overflow-x: hidden;
     transition: 0.3s ease-in;
     padding-top: 60px;
@@ -100,7 +107,7 @@ nav .sideMenuButton {
 .sideNavigationBar a button {
     padding: 10px 20px;
     border-radius: 10px;
-    color: green;
+    color: rgb(245, 247, 245);
     font-size: 16px;
     border-style: none;
     font-weight: 700;
@@ -150,7 +157,6 @@ a {
     color: black;
 }
 
-/* Header content responsive */
 @media screen and (max-width: 980px) {
     .side2 img {
         width: 350px;
@@ -183,8 +189,6 @@ a {
     }
 }
 
-/* section */
-
 section .topic a {
     font-size: 25px;
     font-weight: 500;
@@ -206,8 +210,6 @@ section .topic a {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
     cursor: default;
 }
-
-/* Contact Page  */
 
 .contact {
     padding: 20px;
@@ -280,7 +282,7 @@ button {
 }
 
 button:hover {
-    background-color: #8cc099;
+    background-color: aqua;
 }
 
 .rightside1 {
